@@ -1,0 +1,38 @@
+/**
+ * "author" = "Kapil Gupta"
+ * "copyright" = "Copyright 2016, TheMallCloud"
+ * "credits" = ["Kapil Gupta"]
+ * "license" = "GPL"
+ * "version" = "1.0.1"
+ * "maintainer" = "Kapil Gupta"
+ * "email" = "kpgupta98@gmail.com"
+ * "status" = "Production"
+*/
+
+syntax = "proto3";
+package templates;
+
+import "m_helmets.proto";
+import "m_helmets_f.proto";
+import "online.proto";
+import "nxt_thrty_days.proto";
+import "lng_time_no_see.proto";
+
+/**
+ * Available options in creating templates
+ * Update this message to introduce new templates
+ */
+message Options {
+  M_Helmets m_helmets = 1;
+  M_Helmets_F m_helmets_f = 2;
+  Online online = 3;
+  Nxt_Thrty_Days nxt_thrty_days = 4;
+  Lng_Time_No_See lng_time_no_see = 5;
+}
+
+/**
+ * Allow options of choosing required models only
+ */
+message Models {
+  repeated Options options = 1;
+}

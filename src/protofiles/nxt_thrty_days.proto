@@ -1,0 +1,21 @@
+/**
+ * "author" = "Kapil Gupta"
+ * "copyright" = "Copyright 2016, TheMallCloud"
+ * "credits" = ["Kapil Gupta"]
+ * "license" = "GPL"
+ * "version" = "1.0.1"
+ * "maintainer" = "Kapil Gupta"
+ * "email" = "kpgupta98@gmail.com"
+ * "status" = "Production"
+*/
+
+syntax = "proto3";
+package templates;
+
+
+/**
+ * Purchase done in next 30 days
+*/
+message Nxt_Thrty_Days {
+
+}
