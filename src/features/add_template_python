@@ -1,0 +1,2 @@
+#! /bin/sh
+./src/features/add_template.py "$@"
