@@ -25,7 +25,10 @@ data: requirements
 clean:
 	find . -name "*.pyc" -exec rm {} \;
 	rm -f src/features/add_template_python src/features/read_template_python
-	rm -f src/features/protoc_middleman src/features/_pb2.py
+	rm -f src/features/protoc_middleman src/features/*_pb2.py
+
+clean_data:
+	rm -f src/features/*.prototxt
 
 ## Lint using flake8
 lint:
@@ -70,7 +73,7 @@ features: add_template_python read_template_python
 	python src/features/add_template.py
 
 protoc_middleman: src/protofiles/models.proto
-	protoc --python_out=. src/protofiles/
+	protoc --proto_path=src/protofiles --python_out=src/features src/protofiles/*.proto
 	@touch src/features/protoc_middleman
 
 add_template_python: src/features/add_template.py protoc_middleman

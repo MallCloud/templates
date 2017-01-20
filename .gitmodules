@@ -1,9 +1,9 @@
+[submodule "src/core/caffeonspark"]
+	path = src/core/caffeonspark
+	url = https://github.com/daemonslayer/CaffeOnSpark
 [submodule "src/core/tf_dnn"]
 	path = src/core/tf_dnn
 	url = https://github.com/daemonslayer/tf_dnn
 [submodule "src/core/caffe_dnn"]
 	path = src/core/caffe_dnn
 	url = https://github.com/daemonslayer/caffe_dnn
-[submodule "src/core/caffeonspark"]
-	path = src/core/caffeonspark
-	url = https://github.com/daemonslayer/CaffeOnSpark
