@@ -20,7 +20,7 @@ import sys
 sys.path.append('..')
 
 import os.path
-import models_pb2 as models
+import models_pb2
 
 
 path_to_json = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "server", "config.json")
@@ -36,7 +36,7 @@ def CreateTemplates(templates) :
 	CheckTemplatesNeeded(templates)
 
 
-parameters_book = models.Models()
+parameters_book = models_pb2.Models()
 
 try:
 	with open(path_to_book, 'rb') as file:
