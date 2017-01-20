@@ -22,7 +22,7 @@ import "lng_time_no_see.proto";
  * Available options in creating templates
  * Update this message to introduce new templates
  */
-message Options {
+message Templates {
   M_Helmets m_helmets = 1;
   M_Helmets_F m_helmets_f = 2;
   Online online = 3;
@@ -34,5 +34,5 @@ message Options {
  * Allow options of choosing required models only
  */
 message Models {
-  repeated Options options = 1;
+  repeated Templates templates = 1;
 }
